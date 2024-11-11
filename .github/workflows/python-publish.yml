@@ -35,7 +35,7 @@ jobs:
       uses: MariachiBear/get-repo-name-action@v1.3.0
       with:
         with-owner: 'true'
-        string-case: 'uppercase'
+        string-case: 'lowercase'
     - uses: olegtarasov/get-tag@v2.1.3
       id: get_tag_name
       with:
@@ -55,7 +55,7 @@ jobs:
     - name: Upload
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ steps.repo-name.outputs.repository-name }}-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
+        name: ftwd_datatalk-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
         path: artifact/*.zip
 
   upload-artifact:
