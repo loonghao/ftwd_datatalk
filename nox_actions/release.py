@@ -27,11 +27,11 @@ def build_exe(session: nox.Session) -> None:
 
         if args.test:
             print("run tests")
-            vexcle_exe = shutil.which("vexcle", path=platform_dir)
+            vexcle_exe = shutil.which(PACKAGE_NAME, path=platform_dir)
             assert os.path.exists(vexcle_exe)
 
         if args.release:
-            temp_dir = os.path.join(THIS_ROOT, ".zip")
+            temp_dir = os.path.join(THIS_ROOT, "artifact")
             version = str(args.version)
             print(f"make zip to current version: {version}")
             os.makedirs(temp_dir, exist_ok=True)

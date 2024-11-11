@@ -2,7 +2,7 @@
 from pathlib import Path
 
 
-PACKAGE_NAME = ""
+PACKAGE_NAME = "ftwd_datatalk"
 THIS_ROOT = Path(__file__).parent.parent
 PROJECT_ROOT = THIS_ROOT.parent
 
