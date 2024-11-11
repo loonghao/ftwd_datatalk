@@ -1,3 +1,9 @@
+## v0.1.1 (2024-11-11)
+
+### Refactor
+
+- Update artifact upload path in python-publish workflow
+
 ## v0.1.0 (2024-11-11)
 
 ### Feat
