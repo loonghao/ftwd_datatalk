@@ -10,9 +10,7 @@ class YearDataExporter(ExcelExporter):
     output_name = "年度项目数据.xlsx"
 
     def export_data(self, data):
-        print(data)
         print("export data to excel file: {}".format(self.file_path))
-
         workbook = xlsxwriter.Workbook(self.file_path)
         worksheet = workbook.add_worksheet()
         worksheet.write_row(0, 0, data[0].keys())
