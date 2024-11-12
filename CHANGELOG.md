@@ -1,3 +1,9 @@
+## v0.1.2 (2024-11-12)
+
+### Fix
+
+- Update artifact upload path in python-publish workflow   - Changed string-case from 'uppercase' to 'lowercase'.   - Updated artifact name format.
+
 ## v0.1.1 (2024-11-11)
 
 ### Refactor
