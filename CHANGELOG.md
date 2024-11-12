@@ -1,3 +1,9 @@
+## v0.1.3 (2024-11-12)
+
+### Fix
+
+- **annual.py**: Remove unnecessary print statements and correct output message
+
 ## v0.1.2 (2024-11-12)
 
 ### Fix
