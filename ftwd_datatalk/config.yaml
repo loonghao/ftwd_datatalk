@@ -1,0 +1,23 @@
+assets:
+  project_prod_keys:
+    - srf
+    - mod
+    - scan
+  no_project_prod_keys:
+    - com
+    - common
+  work_day_key: "正常工时"
+  excel_header:
+    总投入人天: ""
+    项目人天": ""
+    项目占比: ""
+    非项目人天: ""
+    非项目占比: ""
+    项目制作人天: ""
+    项目制作占比: ""
+    项目管理人天: ""
+    项目管理占比: ""
+  output_name: 数据分析报告.xlsx
+
+annual:
+  output_name: 年度项目数据.xlsx

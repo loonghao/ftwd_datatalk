@@ -1,23 +1,15 @@
 # Import third-party modules
 from datatalk.analyzer import DataAnalyzer
 
+# Import local modules
+from ftwd_datatalk.filesystem import get_config
+
 
 class AnnualDataAnalysis(DataAnalyzer):
 
-    to_excel = {
-        "月份": "",
-        "总投入人天": "",
-        "项目人天": "",
-        "项目占比": "",
-        "非项目人天": "",
-        "非项目占比": "",
-        "项目制作人天": "",
-        "项目制作占比": "",
-        "项目管理人天": "",
-        "项目管理占比": "",
-
-    }
-    output_name = "年度数据分析报告.xlsx"
+    def __init__(self):
+        self.config = get_config("assets")
+        self.excel_header = self.config.excel_header
 
     def analyse_data(self, datas):
         all_data = []

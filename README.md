@@ -2,12 +2,12 @@
 数据分析小工具 [WIP]
 
 ```shell
-ftwd_datatalk assets --excel your/excel/file.xlsx --output c:/output
+ftwd_datatalk assets your/excel/file.xlsx
 ```
 
 ## 年度分析
 ```shell
-ftwd_datatalk annual --excel your/excel/数据分析报告-1.xlsx --excel your/excel/数据分析报告-2.xlsx --output c:/output
+ftwd_datatalk annual your/excel/file.xlsx
 ```
 
 
