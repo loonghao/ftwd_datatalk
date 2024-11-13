@@ -3,11 +3,11 @@ import xlsxwriter
 
 # Import local modules
 from ftwd_datatalk.exporters.assets import ExcelExporter
+from ftwd_datatalk.filesystem import get_config
 
 
-class YearDataExporter(ExcelExporter):
-
-    output_name = "年度项目数据.xlsx"
+class AnnualDataExporter(ExcelExporter):
+    output_name = get_config("annual").output_name
 
     def export_data(self, data):
         print("export data to excel file: {}".format(self.file_path))

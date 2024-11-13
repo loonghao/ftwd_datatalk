@@ -5,9 +5,12 @@ import os.path
 from datatalk.exporter import DataExporter
 import xlsxwriter
 
+# Import local modules
+from ftwd_datatalk.filesystem import get_config
+
 
 class ExcelExporter(DataExporter):
-    output_name = "数据分析报告.xlsx"
+    output_name = get_config("assets").output_name
 
     def __init__(self, output_path: str):
         os.makedirs(output_path, exist_ok=True)

@@ -2,7 +2,6 @@
 # performed. See PyOxidizer's documentation at
 # https://pyoxidizer.readthedocs.io/en/stable/ for details of this
 # configuration file format.
-
 # Configuration files consist of functions which define build "targets."
 # This function creates a Python executable and installs it in a destination
 # directory.
@@ -101,7 +100,10 @@ def make_install(exe):
 
     # Add the generated executable to our install layout in the root directory.
     files.add_python_resource(".", exe)
-
+    files.add_file(
+        content=FileContent("ftwd_datatalk/config.yaml"),  # 配置文件的源路径
+        path="config.yaml",         # 目标路径（根目录）
+    )
     return files
 
 
