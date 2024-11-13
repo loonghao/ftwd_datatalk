@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ftwd-datatalk"
-version = "0.1.3"
+version = "0.2.0"
 description = ""
 authors = ["longhao <hal.long@outlook.com>"]
 readme = "README.md"
@@ -21,7 +21,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.1.3"
+version = "0.2.0"
 tag_format = "v$version"
 version_files = [
     "pyproject.toml:version",

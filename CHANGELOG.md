@@ -1,3 +1,9 @@
+## v0.2.0 (2024-11-13)
+
+### Feat
+
+- **config**: Add configuration files and update analyzers and exporters to use them Reorganize the project's directory structure to include a configuration file, refactor analzyers and exporters to use the configuration for output naming and headers.
+
 ## v0.1.3 (2024-11-12)
 
 ### Fix
