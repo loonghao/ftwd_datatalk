@@ -19,21 +19,20 @@ class AssetsDataAnalysis(DataAnalyzer):
         self.no_project_days_count = 0
         self.project_prod_day_count = 0
         self.work_day_key = self.config.work_day_key
+        self.task_name_key = self.config.task_name_key
+        self.no_project_prefix = self.config.no_project_prefix
 
-    def get_key(self, value):
-
-        return self.get_key(value["任务名称"])
 
     def calculate_person_days(self, value):
         self.person_day_count += float(value[self.work_day_key])
 
     def calculate_project_days(self, value):
-        if "np-" in value["任务名称"]:
+        if self.no_project_prefix in value[self.task_name_key]:
             self.no_project_days_count += float(value[self.work_day_key])
 
     def calculate_project_prod_days(self, value):
         for key in self.project_prod_keys:
-            if key in value["任务名称"].lower():
+            if key in value[self.task_name_key].lower():
                 self.project_prod_day_count += float(value[self.work_day_key])
 
     def analyse_data(self, datas):
