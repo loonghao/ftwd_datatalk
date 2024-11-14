@@ -6,7 +6,9 @@ assets:
   no_project_prod_keys:
     - com
     - common
+  no_project_prefix: np_
   work_day_key: "正常工时"
+  task_name_key: "任务名称"
   excel_header:
     总投入人天: ""
     项目人天": ""
