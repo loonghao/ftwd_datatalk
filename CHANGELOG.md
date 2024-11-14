@@ -1,3 +1,9 @@
+## v0.3.0 (2024-11-14)
+
+### Feat
+
+- **config, analyzers**: Update configuration and analyzer to use task_name_key
+
 ## v0.2.0 (2024-11-13)
 
 ### Feat
